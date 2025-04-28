@@ -1,0 +1,156 @@
+.container {
+    margin-top: 30px;
+    height: calc(100vh - 157px);
+
+    .button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .table {
+        margin-top: 20px;
+        background-color: #FAFAFA;
+        width: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+        border-collapse: separate;  
+        text-align: left;
+        border: 1px solid #DEDEDE;
+        border-spacing: 0;
+     
+        td, th {
+            text-align: left;
+            padding: 15px 10px;
+            font-size: 15px;
+        }
+
+        th {
+            width: 150px;
+        }
+
+        th:first-child {
+            width: 30px;
+        }
+        
+        th:nth-child(2){
+            width: 500px;
+        }
+
+
+        th {
+            background-color: #DBDBDB;
+        }
+
+        td {
+            border-top: 1px solid #DEDEDE;
+
+            .action {
+                color: white;
+                background-color: black;
+                cursor: pointer;
+                border: none;
+                padding: 10px 15px;
+                margin-right: 10px;
+                border-radius: 6px;
+            }
+        }
+
+        th:first-child, :first-child {
+            text-align: center;
+        }
+        
+        td {
+            width: 150px;
+        }
+
+        td:first-child {
+            width: 30px;
+        }
+
+        td:nth-child(2){
+            width: 500px;
+        }
+
+        td:nth-child(5){
+            text-transform: uppercase;
+        }
+        
+        tr:hover {
+            background-color: #F8F8F8;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 1210px) {
+
+    .container > .table {
+
+        td {
+            text-align: left;
+            padding: 5px 10px;
+            font-size: 13px;
+        }
+    
+        
+        th:nth-child(2){
+            width: 200px;
+        }
+
+        td:nth-child(2){
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .container > .table {
+
+        td {
+            .action {
+                width: 100%;
+                margin: 1px;
+            }
+        }  
+    }
+}
+
+
+@media screen and (max-width: 915px) {
+
+    .container > .table {
+
+        th {
+            display: none;
+        }
+
+        td {
+            text-align: left;
+            padding: 5px 10px;
+            font-size: 13px;
+        
+        }
+    
+        td:first-child {
+            display: none;
+        }
+
+        td:nth-child(3){
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 685px) {
+    .container {
+        margin-top: 0px;
+        height: calc(100vh - 178px);
+    }
+}

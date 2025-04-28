@@ -1,0 +1,84 @@
+.container {
+        
+    .input {
+       width: 100%;
+       padding: 20px 0;
+       border: none;
+       font-size: 36px;
+       font-weight: 500;
+      
+       &::placeholder {
+            color: #B8B8B8;
+       }
+
+       &:focus {
+        outline: none;
+      }
+    }    
+
+    .error {
+      width: 100%;
+      padding: 20px 0;
+      border: none;
+      font-size: 36px;
+      font-weight: 500;
+
+      &::placeholder {
+        color: red;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+}
+
+
+.navigation {  
+  
+  nav {
+    overflow: hidden;
+    display: flex;
+    width: 250px;
+    background: #D9D9D9;
+    padding: 5px;
+    border-radius: 6px;
+  }
+
+
+}
+
+.tab, .tab_active {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px ;
+  font-size: 1rem;
+  border: none;
+  background: #D9D9D9;
+  transition: border-color 0.3s ease;
+}
+
+.tab_active {
+  background-color: black;
+  color:white;
+  border-radius: 6px;
+}
+
+
+.list nav {
+  overflow: hidden;
+  display: flex;
+}
+
+.content {
+  display: none;
+  overflow: auto;
+  flex: 1;
+  height: auto; 
+}
+
+.content_active {
+  @extend .content; // Inherit base content styles
+  display: block;
+  padding-top: 1.25rem;
+}

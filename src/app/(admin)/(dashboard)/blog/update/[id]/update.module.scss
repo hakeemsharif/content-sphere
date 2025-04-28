@@ -1,0 +1,13 @@
+.container {
+    margin-top: 30px;
+    height: calc(100vh - 157px);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 4fr 1fr ;
+}
+
+.content, .details {
+    background-color: white;
+    border-radius: 11px;
+    padding: 30px;
+}

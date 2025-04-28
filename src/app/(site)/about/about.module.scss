@@ -1,0 +1,54 @@
+.tagline {
+    font-size:4.986rem;
+    width: 60rem;
+}
+
+.about_info {
+    margin: 30px 0;
+    width: 60rem;
+    font-size: 1.2rem;
+}
+
+.section {
+    margin: 50px 0;
+  }
+
+.image_section {
+  width: 100%;
+  height: calc(100dvh - 498px);
+  position: relative;
+  
+    .image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 11px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+  .tagline {
+    font-size:3.500rem;
+    width: auto;
+  }
+
+      .about_info {
+      width: auto;
+      font-size: 1rem;
+    }
+
+  .image_section {
+    height: calc(100dvh - 414px)
+  }
+
+  
+}
+
+@media screen and (max-width: 800px) {
+  .tagline {
+    font-size:2.100rem;
+  }
+
+  .image_section {
+    height: calc(100dvh - 366px)
+  }
+}

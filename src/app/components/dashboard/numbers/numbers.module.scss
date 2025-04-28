@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    grid-gap: 10px;
+    grid-template-areas:
+    "card-one card-two"
+    "card-three card-four";
+}
+
+.card_one, .card_two, .card_three, .card_four {
+    background-color: white;
+    border-radius: 11px;
+    display: block;
+    align-content: center;
+    text-align: center;
+
+    .count {
+        font-size: 80px;
+        margin: 0;
+    }
+}
+
+.card_one{
+    grid-area: card-one;
+}
+
+.card_two {
+    grid-area: card-two;
+}
+
+.card_three {
+    grid-area: card-three;
+}
+
+.card_four {
+    grid-area: card-four;
+}
+
+@media screen and (max-width: 915px) {
+
+    .card_one, .card_two, .card_three, .card_four {
+    
+        .count {
+            font-size: 50px;
+            margin: 0;
+        }
+    }
+    
+
+}
