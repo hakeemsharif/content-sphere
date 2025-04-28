@@ -10,7 +10,7 @@ Web App with Simple CMS built using Next.js and Supabase
 
 ## Project Status
 
-- **Started:** 04 April 2025  
+- **Started:** 02 April 2025  
 - **Completed:** 28 April 2025  
 
 ## Potential Future Updates
